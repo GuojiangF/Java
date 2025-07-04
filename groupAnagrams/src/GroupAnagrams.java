@@ -11,6 +11,7 @@ public class GroupAnagrams {
             Arrays.sort(chars);
             String key = new String(chars);
             List<String> strList = map.getOrDefault(key, new ArrayList<>());
+            // 添加当前字符串到对应的分组中
             strList.add(s);
             map.put(key, strList);
         }
